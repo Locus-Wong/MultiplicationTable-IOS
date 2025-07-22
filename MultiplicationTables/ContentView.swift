@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @State private var numberOfTimes = 2
     @State private var questionCount = 5
-    @State private var settingChange = true
+    @State private var settingChange = false
     @State private var questions = [String]()
     @State private var answers = [Int]()
     @State private var userAnswers = [String]() // Individual answers for each question
+    @State private var score = 0
     
     @State private var alertTitle = "New Game Unavailable"
     @State private var alertMessage = "Finish the round or change a setting to start a new game."
@@ -65,6 +66,10 @@ struct ContentView: View {
                         Section{
                             ForEach(0..<questions.count, id: \.self){ index in
                                 VStack(alignment: .leading, spacing: 8) {
+                                    let userAnswer = Int(userAnswers[index].trimmingCharacters(
+                                        in: .whitespacesAndNewlines
+                                    )) ?? -1
+                                    let correctAnswer = answers[index]
                                     HStack{
                                         Text(questions[index])
                                             .font(.headline)
@@ -90,8 +95,6 @@ struct ContentView: View {
                                     
                                     // Only show result if user has entered something
                                     if index < userAnswers.count && !userAnswers[index].isEmpty && focusedField != index {
-                                        let userAnswer = Int(userAnswers[index]) ?? -1
-                                        let correctAnswer = answers[index]
                                         HStack {
                                             Image(systemName: userAnswer == correctAnswer ? "checkmark.circle.fill" : "xmark.circle.fill")
                                                 .foregroundColor(userAnswer == correctAnswer ? .green : .red)
@@ -122,11 +125,24 @@ struct ContentView: View {
         }
     }
     
+    func calculateScore(){
+        for index in 0..<questionCount{
+            let userAnswer = Int(userAnswers[index].trimmingCharacters(
+                in: .whitespacesAndNewlines
+            )) ?? -1
+            let correctAnswer = answers[index]
+            if userAnswer == correctAnswer {
+                score += 1
+            }
+        }
+    }
+    
     func generateQuestion(){
         // Reset everything
         questions = []
         answers = []
         userAnswers = []
+        score = 0
         
         for _ in 0..<questionCount{
             let firstNumber = Int.random(in: 1...numberOfTimes)
@@ -147,11 +163,12 @@ struct ContentView: View {
             showingAlert = false
         }
         else if allQuestionsAnswered {
+            calculateScore()
             alertTitle = "Game End"
-            alertMessage = "Your final score is: 5"
+            alertMessage = "Your final score is: \(score)"
             // restart the game with the new setting or if all questions are completed
-            generateQuestion()
             showingAlert = true
+            generateQuestion()
         }
         else {
             alertTitle = "New Game Unavailable"
