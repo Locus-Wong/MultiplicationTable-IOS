@@ -5,7 +5,7 @@ Welcome to the Multiplication Game, a fun and interactive math app designed to h
 
 📱 Features
 🎯 Custom Difficulty
-Choose which multiplication tables to practice using an easy-to-use Stepper (from 2× up to 12×).
+Choose which multiplication tables to practice using an easy-to-use Stepper (from 1× up to 12×).
 
 🔀 Random Question Generator
 Questions are generated randomly based on your selected difficulty and question count.
@@ -16,13 +16,9 @@ Questions are generated randomly based on your selected difficulty and question 
 
 <img width="420" height="846" alt="image" src="https://github.com/user-attachments/assets/77377636-7464-4a85-b1e8-5197dda12f46" />
 
-
-
 ✅ Score Summary
 At the end of the game, you'll see how many questions you got right—and you can play again to improve!
-
-🌈 Kid-Friendly UI
-Bright colors and simple controls make it easy and appealing for children to use. The app is designed with learning and fun in mind.
+<img width="414" height="840" alt="image" src="https://github.com/user-attachments/assets/45a42771-d7fb-4d02-8bfd-1717bb795359" />
 
 🎮 Gameplay Flow
 Choose Settings:
