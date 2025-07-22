@@ -10,6 +10,10 @@ Choose which multiplication tables to practice using an easy-to-use Stepper (fro
 🔀 Random Question Generator
 Questions are generated randomly based on your selected difficulty and question count.
 
+<img width="420" height="841" alt="image" src="https://github.com/user-attachments/assets/354d2e34-c419-40cb-8870-ef0e1930e199" />
+
+<img width="420" height="846" alt="image" src="https://github.com/user-attachments/assets/77377636-7464-4a85-b1e8-5197dda12f46" />
+
 ✅ Score Summary
 At the end of the game, you'll see how many questions you got right—and you can play again to improve!
 
