@@ -23,20 +23,21 @@ At the end of the game, you'll see how many questions you got right—and you ca
 <img width="414" height="840" alt="image" src="https://github.com/user-attachments/assets/45a42771-d7fb-4d02-8bfd-1717bb795359" />
 
 Validation
+<br/>
 <img width="420" height="841" alt="image" src="https://github.com/user-attachments/assets/de70084c-26e4-4150-8048-6b1e4ec2671a" />
 
 Gameplay Flow
 <br/>
-Choose Settings:
+1. Choose Settings:
 Select your difficulty (e.g., up to 5×, 10×, or 12×).
 Pick how many questions you'd like (5, 10, or 20).
 <br/>
-Play the Game:
+2. Play the Game:
 Answer each multiplication question one at a time.
 Get immediate feedback on your progress.
 <br/>
-See Your Results:
+3. See Your Results:
 Get your score.
 <br/>
-Try again to beat your previous score!
+4. Try again to beat your previous score!
 
