@@ -31,13 +31,10 @@ Gameplay Flow
 1. Choose Settings:
 Select your difficulty (e.g., up to 5×, 10×, or 12×).
 Pick how many questions you'd like (5, 10, or 20).
-<br/>
 2. Play the Game:
 Answer each multiplication question one at a time.
 Get immediate feedback on your progress.
-<br/>
 3. See Your Results:
 Get your score.
-<br/>
 4. Try again to beat your previous score!
 
