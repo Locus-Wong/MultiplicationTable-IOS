@@ -14,6 +14,9 @@ struct ContentView: View {
     @State private var questions = [String]()
     @State private var answers = [Int]()
     @State private var userAnswers = [String]() // Individual answers for each question
+    
+    @State private var alertTitle = "New Game Unavailable"
+    @State private var alertMessage = "Finish the round or change a setting to start a new game."
     @State private var showingAlert = false
     @FocusState private var focusedField: Int? // Track which field is focused
     
@@ -82,6 +85,7 @@ struct ContentView: View {
                                         .textFieldStyle(RoundedBorderTextFieldStyle())
                                         .frame(width: 110)
                                         .focused($focusedField, equals: index)
+                                        .disabled(!userAnswers[index].isEmpty && focusedField != index)
                                     }
                                     
                                     // Only show result if user has entered something
@@ -110,10 +114,10 @@ struct ContentView: View {
                 .onAppear(){
                     generateQuestion()
                 }
-                .alert("New Game Unavailable", isPresented: $showingAlert) {
+                .alert(alertTitle, isPresented: $showingAlert) {
                     Button("OK") { }
                 } message: {
-                    Text("Finish the round or change a setting to start a new game.")
+                    Text(alertMessage)
                 }
         }
     }
@@ -133,19 +137,28 @@ struct ContentView: View {
         
         // Initialize userAnswers array with empty strings
         userAnswers = Array(repeating: "", count: questionCount)
-        print("User answer count: \(userAnswers.count)")
     }
     
     func StartGame(){
-        if settingChange || allQuestionsAnswered {
+        if settingChange {
             // restart the game with the new setting or if all questions are completed
             generateQuestion()
             settingChange = false
             showingAlert = false
         }
-        else {
+        else if allQuestionsAnswered {
+            alertTitle = "Game End"
+            alertMessage = "Your final score is: 5"
+            // restart the game with the new setting or if all questions are completed
+            generateQuestion()
             showingAlert = true
         }
+        else {
+            alertTitle = "New Game Unavailable"
+            alertMessage = "Finish the round or change a setting to start a new game."
+            showingAlert = true
+        }
+        
     }
 }
 
