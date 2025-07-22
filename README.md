@@ -3,7 +3,6 @@
 🧠 Multiplication Game – SwiftUI Educational App
 Welcome to the Multiplication Game, a fun and interactive math app designed to help kids (especially ages 9 and under) practice their multiplication skills! Built using SwiftUI, this app provides a colorful and customizable way to learn through play.
 
-📱 Features
 🎯 Custom Difficulty
 <br/>
 Choose which multiplication tables to practice using an easy-to-use Stepper (from 1× up to 12×).
