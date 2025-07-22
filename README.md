@@ -10,11 +10,10 @@ Choose which multiplication tables to practice using an easy-to-use Stepper (fro
 Random Question Generator
 <br/>
 Questions are generated randomly based on your selected difficulty and question count.
-
 <img width="420" height="841" alt="image" src="https://github.com/user-attachments/assets/354d2e34-c419-40cb-8870-ef0e1930e199" />
-
 <img width="415" height="840" alt="image" src="https://github.com/user-attachments/assets/df149c33-092a-423c-8066-1998506f98d3" />
 
+<br/>
 Immediate feedback on your answer
 <br/>
 <img width="416" height="837" alt="image" src="https://github.com/user-attachments/assets/a0396beb-8c2a-48c8-8bd8-fadc74c33ab5" />
