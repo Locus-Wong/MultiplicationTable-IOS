@@ -7,15 +7,6 @@ Welcome to the Multiplication Game, a fun and interactive math app designed to h
 🎯 Custom Difficulty
 Choose which multiplication tables to practice using an easy-to-use Stepper (from 2× up to 12×).
 
-❓ Question Count Options
-Select how many questions you'd like to be asked:
-
-5 questions
-
-10 questions
-
-20 questions
-
 🔀 Random Question Generator
 Questions are generated randomly based on your selected difficulty and question count.
 
