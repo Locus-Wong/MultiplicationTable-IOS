@@ -15,7 +15,9 @@ Questions are generated randomly based on your selected difficulty and question 
 
 <img width="415" height="840" alt="image" src="https://github.com/user-attachments/assets/df149c33-092a-423c-8066-1998506f98d3" />
 
-<img width="420" height="846" alt="image" src="https://github.com/user-attachments/assets/77377636-7464-4a85-b1e8-5197dda12f46" />
+Immediate feedback on your answer
+<br/>
+<img width="416" height="837" alt="image" src="https://github.com/user-attachments/assets/a0396beb-8c2a-48c8-8bd8-fadc74c33ab5" />
 
 Score Summary
 <br/>
