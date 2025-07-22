@@ -18,13 +18,15 @@ Questions are generated randomly based on your selected difficulty and question 
 <img width="420" height="846" alt="image" src="https://github.com/user-attachments/assets/77377636-7464-4a85-b1e8-5197dda12f46" />
 
 Score Summary
+<br/>
 At the end of the game, you'll see how many questions you got right—and you can play again to improve!
 <img width="414" height="840" alt="image" src="https://github.com/user-attachments/assets/45a42771-d7fb-4d02-8bfd-1717bb795359" />
 
 Validation
 <img width="420" height="841" alt="image" src="https://github.com/user-attachments/assets/de70084c-26e4-4150-8048-6b1e4ec2671a" />
 
-🎮 Gameplay Flow
+Gameplay Flow
+<br/>
 Choose Settings:
 Select your difficulty (e.g., up to 5×, 10×, or 12×).
 Pick how many questions you'd like (5, 10, or 20).
